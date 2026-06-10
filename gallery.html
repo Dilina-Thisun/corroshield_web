@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" href="./css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <h2>CORROSHIED.LK</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO HEADER -->
+<div class="gallery-hero">
+    <h1>Our Project Gallery</h1>
+    <p>Industrial corrosion protection works & engineering solutions</p>
+</div>
+
+<!-- GALLERY GRID -->
+<div class="gallery-section">
+
+    <img src="./img/20210324_193655.jpg" onclick="openLightbox(this)">
+    <img src="./img/20210324_193653.jpg" onclick="openLightbox(this)">
+    <img src="./img/TimePhoto_20210403_112831.jpg" onclick="openLightbox(this)">
+    <img src="./img/TimePhoto_20210403_112834.jpg" onclick="openLightbox(this)">
+    <img src="./img/TimePhoto_20210403_115546.jpg" onclick="openLightbox(this)">
+    <img src="./img/TimePhoto_20210403_115537.jpg" onclick="openLightbox(this)">
+
+</div>
+
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-bottom">
+        © 2026 Corrosion Control Engineering | Designed & Developed by DT_SOLUTION
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
