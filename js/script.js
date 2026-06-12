@@ -22,13 +22,11 @@ window.onscroll = function () {
     }
 };
 
-
-
-// Smooth scroll to top
+// Scroll to top
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
     });
 }
 
