@@ -55,27 +55,6 @@ nav a:hover {
     overflow: hidden;
 }
 
-@media (max-width:768px){
-
-    .hero-content h1{
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .hero-content p{
-        font-size: 1rem;
-    }
-
-    .hero-btn,
-    .instrument-btn{
-        display:block;
-        width:90%;
-        margin:10px auto;
-        text-align:center;
-    }
-
-}
-
 /* HERO IMAGE */
 .hero-small {
     height: 60vh; /* 🔥 smaller hero */
@@ -247,17 +226,6 @@ footer {
     color: #aaa;
 }
 
-@media (max-width:768px){
-
-    .footer-container{
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-        gap:20px;
-    }
-
-}
-
 /* ================= FLOATING BOX ================= */
 .floating-btn {
     position: fixed;
@@ -391,21 +359,6 @@ footer {
 .gallery img:hover {
     transform: scale(1.05);
 }
-
-@media (max-width: 768px){
-
-    .info-section{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-card{
-        width: 90%;
-        max-width: 100%;
-    }
-
-}
-
 
 /* LIGHTBOX BACKGROUND */
 .lightbox {
@@ -1317,4 +1270,110 @@ footer {
 
 #backToTop i{
     color:white;
+}
+
+
+/* ================= MOBILE FIXES ================= */
+
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+        flex-direction:column;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:0;
+    }
+
+    .hero-small{
+        height:70vh;
+    }
+
+    .hero-content h1,
+    .type-text{
+        font-size:28px !important;
+        white-space:normal;
+        width:100%;
+        border-right:none;
+        animation:none;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .hero-btn,
+    .instrument-btn{
+        display:block;
+        width:90%;
+        margin:10px auto;
+        text-align:center;
+    }
+
+    .info-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .info-card{
+        width:95% !important;
+        max-width:95%;
+    }
+
+    .about-highlights{
+        grid-template-columns:1fr;
+    }
+
+    .vm-section{
+        padding:30px 20px;
+    }
+
+    .vm-image img{
+        width:100%;
+        max-width:350px;
+    }
+
+    .contact-wrapper{
+        padding:30px 20px;
+    }
+
+    .contact-details,
+    .contact-form{
+        min-width:100%;
+    }
+
+    .footer-container{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .video-card{
+        min-width:280px;
+    }
+
+    .video-card video{
+        height:180px;
+    }
+
+    #backToTop{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+}
+
+img{
+    max-width:100%;
+    height:auto;
 }
